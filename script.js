@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-              fetchDataAndPopulateTable(); // Chama a função na inicialização
+              fetchDataAndPopulateTable(); // Chama imediatamente ao carregar a página
           
-              // Define um intervalo para atualizar os dados da tabela periodicamente
-              // Aqui está configurado para atualizar a cada 5 minutos (300000 ms)
-              setInterval(fetchDataAndPopulateTable, 300);
+              // Define um intervalo para atualizar os dados da tabela a cada 10 segundos
+              setInterval(fetchDataAndPopulateTable, 10000);
           });
           
           function fetchDataAndPopulateTable() {
@@ -14,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
                       tableBody.innerHTML = ''; // Limpa a tabela antes de adicionar novos dados
           
                       // Limita a quantidade de dados exibidos para as 10 primeiras linhas
-                      data.slice(0, 30).forEach(item => {
+                      data.slice(0, 10).forEach(item => {
                           const row = tableBody.insertRow();
                           Object.values(item).forEach((text, index) => {
                               const cell = row.insertCell();
-                              if (index === Object.values(item).length - 3) { // Verifica se é a coluna do link
+                              if (index === Object.values(item).length - 3) { // Identifica a coluna do link
                                   const a = document.createElement('a');
                                   a.href = text;
                                   a.target = "_blank";
