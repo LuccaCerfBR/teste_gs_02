@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
           
               // Define um intervalo para atualizar os dados da tabela periodicamente
               // Aqui está configurado para atualizar a cada 5 minutos (300000 ms)
-              setInterval(fetchDataAndPopulateTable, 300000);
+              setInterval(fetchDataAndPopulateTable, 300);
           });
           
           function fetchDataAndPopulateTable() {
