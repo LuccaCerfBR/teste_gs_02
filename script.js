@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                           const row = tableBody.insertRow();
                           Object.values(item).forEach((text, index) => {
                               const cell = row.insertCell();
-                              if (index === Object.values(item).length - 3) { // Identifica a coluna do link
+                              if (index === Object.values(item).length - 2) { // Identifica a coluna do link
                                   const a = document.createElement('a');
                                   a.href = text;
                                   a.target = "_blank";
