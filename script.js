@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       tableBody.innerHTML = ''; // Limpa a tabela antes de adicionar novos dados
           
                       // Limita a quantidade de dados exibidos para as 10 primeiras linhas
-                      data.slice(0, 50).forEach(item => {
+                      data.slice(0, 100).forEach(item => {
                           const row = tableBody.insertRow();
                           Object.values(item).forEach((text, index) => {
                               const cell = row.insertCell();
