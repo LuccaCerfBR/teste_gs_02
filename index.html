@@ -8,25 +8,28 @@
 </head>
 <body>
 
-<div id="table-container">
-    <h2>Produtos de Investimento</h2>
-    <table id="products-table">
+<div id="table-container" role="region" aria-label="Tabela de Produtos de Investimento">
+    <table id="products-table" aria-describedby="descriptionProducts">
+        <caption id="descriptionProducts" class="visually-hidden"><h2>Trending de Vendas Renda Fixa - Bancarios<br></h2>.</caption>
         <thead>
             <tr>
                 <th>Tipo de Ativo</th>
-                <th>Indexadores</th>
                 <th>Emissor</th>
-                <th>Código</th>
-                <th>Spread sobre o CDI</th>
-                <th>Rentabilidade (%)</th>
+                <th>Vencimento</th>
                 <th>DU</th>
-                <th>Prazo</th>
-                <th>Pontuação de Risco</th>
-                <th>Quantidade Disponível</th>
-                <th>Valor Mín. de PU</th>
-                <th>Volume Financeiro</th>
+                <th>Tenor</th>
+                <th>Indexadores</th>
+                <th>Rentabilidade (%)</th>
+                <th>Spread sobre o CDI</th>
+                <th>Rating</th>
+                <th>Carencia</th>
+                <th>Data Carencia</th>
+                <th>Quantidade Inicial</th>
+                <th>Quantidade Final</th> 
+                <th>Quantidade Vendida</th>
+                <th>Financeiro Vendido (R$ mm)</th>
                 <th>Link</th>
-                <th>Classificação</th>
+                <!-- Colunas aqui -->
             </tr>
         </thead>
         <tbody>
