@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
               fetchDataAndPopulateTable(); // Chama imediatamente ao carregar a página
           
               // Define um intervalo para atualizar os dados da tabela a cada 10 segundos
-              setInterval(fetchDataAndPopulateTable,100);
+              setInterval(fetchDataAndPopulateTable,10000);
           });
           
           function fetchDataAndPopulateTable() {
