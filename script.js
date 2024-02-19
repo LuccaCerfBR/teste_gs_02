@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
               fetchDataAndPopulateTable(); // Chama imediatamente ao carregar a página
           
               // Define um intervalo para atualizar os dados da tabela a cada 10 segundos
-              setInterval(fetchDataAndPopulateTable, 120000);
+              setInterval(fetchDataAndPopulateTable,100);
           });
           
           function fetchDataAndPopulateTable() {
@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
                       tableBody.innerHTML = ''; // Limpa a tabela antes de adicionar novos dados
           
                       // Limita a quantidade de dados exibidos para as 10 primeiras linhas
-                      data.slice(0, 100).forEach(item => {
+                      data.slice(0, 50).forEach(item => {
                           const row = tableBody.insertRow();
                           Object.values(item).forEach((text, index) => {
                               const cell = row.insertCell();
-                              if (index === Object.values(item).length - 2) { // Identifica a coluna do link
+                              if (index === Object.values(item).length-1) { // Identifica a coluna do link
                                   const a = document.createElement('a');
                                   a.href = text;
                                   a.target = "_blank";
