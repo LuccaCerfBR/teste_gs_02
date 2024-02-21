@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
           });
           
           function fetchDataAndPopulateTable() {
-              fetch('https://sheetdb.io/api/v1/8cbfwgfcsvsbr')
+              fetch('https://sheetdb.io/api/v1/6u8oa0wrl4ty0')
                   .then(response => response.json())
                   .then(data => {
                       const tableBody = document.getElementById('products-table').getElementsByTagName('tbody')[0];
